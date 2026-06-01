@@ -132,6 +132,7 @@ It does not include:
 - [Getting started](./docs/GETTING_STARTED.md)
 - [Node overview](./docs/NODES.md)
 - [Access, privacy and deployment](./docs/ACCESS_PRIVACY.md)
+- [EEG thesis comparison case study](./docs/CASE_STUDY_EEG_THESIS.md)
 - [FAQ](./docs/FAQ.md)
 
 ## Contact
