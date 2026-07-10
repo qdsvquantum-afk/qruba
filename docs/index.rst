@@ -46,6 +46,7 @@ to start by designing quantum circuits.
    nodes
    access_privacy
    faq
+   GitHub <https://github.com/qdsvquantum-afk/qruba>
 
 Product links
 -------------
