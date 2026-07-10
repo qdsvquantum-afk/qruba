@@ -4,6 +4,8 @@
 [![Powered by](https://img.shields.io/badge/powered%20by-QDSV-14b8a6.svg)](https://qdsv.cloud/)
 [![Platform](https://img.shields.io/badge/platform-cloud%20%7C%20private%20docker-111827.svg)](#access)
 
+Documentation site: https://qdsvquantum-afk.github.io/qruba/
+
 **Qruba** is the visual semantic computation platform powered by **QDSV - Quantum Declarative Semantic Value**.
 
 It helps teams explore quantum-ready computation from prepared data, problem intention, predicates, rankings, reliability policies and evidence without forcing users to start by designing quantum circuits.
