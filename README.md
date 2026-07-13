@@ -8,6 +8,8 @@ Documentation site: https://qdsvquantum-afk.github.io/qruba/
 
 **Qruba** is the visual semantic computation platform powered by **QDSV - Quantum Declarative Semantic Value**.
 
+Qruba does not implement a parallel circuit or formula compiler. Workflow nodes produce QIntent or canonical ProblemSpec inputs and delegate compilation to **QDSV Operation Compiler v1**, the same authority used by QDSV Runtime Alpha and QDSV Bridge. Execution evidence records the operation-program digest so visual workflows can be audited against exported artifacts.
+
 It helps teams explore quantum-ready computation from prepared data, problem intention, predicates, rankings, reliability policies and evidence without forcing users to start by designing quantum circuits.
 
 Qruba is designed for practical exploration by business analysts, data teams, researchers, software engineers, innovation groups and technical decision makers.
@@ -23,6 +25,7 @@ prepared data
 -> candidates
 -> semantic intention
 -> predicates / state spaces
+-> QDSV Operation Compiler v1
 -> execution route
 -> evidence
 ```
