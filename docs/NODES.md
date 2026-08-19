@@ -110,6 +110,6 @@ Not for production cryptography.
 
 ### Sensing Evidence QDSV
 
-Interprets sensor or simulated sensor outputs as states, events, confidence and evidence.
+Interprets prepared sensor or simulated-sensor outputs through an experimental classical reference.
 
-It does not replace sensor hardware or laboratory calibration.
+It does not execute quantum sensing in v1, replace sensor hardware or perform laboratory calibration. Current results must expose `quantum_execution=false` and the classical execution path.

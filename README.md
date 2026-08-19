@@ -8,7 +8,7 @@ Documentation site: https://qdsvquantum-afk.github.io/qruba/
 
 **Qruba** is the visual semantic computation platform powered by **QDSV - Quantum Declarative Semantic Value**.
 
-Qruba does not implement a parallel circuit or formula compiler. Workflow nodes produce QIntent or canonical ProblemSpec inputs and delegate compilation to **QDSV Operation Compiler v1**, the same authority used by QDSV Runtime Alpha and QDSV Bridge. Execution evidence records the operation-program digest so visual workflows can be audited against exported artifacts.
+Qruba does not implement a parallel circuit or formula compiler. Workflow nodes produce QIntent or canonical ProblemSpec inputs and delegate compilation to **QDSV Operation Compiler v2**, the same authority used by QDSV Runtime Alpha and QDSV Bridge. Execution evidence records the operation-program digest so visual workflows can be audited against exported artifacts.
 
 It helps teams explore quantum-ready computation from prepared data, problem intention, predicates, rankings, reliability policies and evidence without forcing users to start by designing quantum circuits.
 
@@ -25,7 +25,7 @@ prepared data
 -> candidates
 -> semantic intention
 -> predicates / state spaces
--> QDSV Operation Compiler v1
+-> QDSV Operation Compiler v2
 -> execution route
 -> evidence
 ```
@@ -99,9 +99,9 @@ This makes Qruba useful as a practical bridge between business or scientific pro
 |---|---|
 | Semantic AI Explorer | Explore AI lifecycle decisions such as configuration search, routing, sampling, boundary evaluation and scientific ranking. |
 | Crypto QDSV | Experimental semantic-quantum cryptography workflows such as challenge-response and commitments. Not production cryptography. |
-| Sensing Evidence QDSV | Interpret sensor or simulated sensor readings as events, rankings, confidence and evidence. |
+| Sensing Evidence QDSV | Experimental classical reference for interpreting prepared sensor readings. It does not execute quantum sensing in v1. |
 
-Experimental nodes are meant for research, pilots and controlled validation. They should not be presented as production security, production sensing certification or guaranteed quantum advantage.
+Experimental nodes are meant for research, pilots and controlled validation. Sensing Evidence v1 explicitly reports `quantum_execution=false`; experimental nodes must not be presented as production security, production sensing certification or guaranteed quantum advantage.
 
 ## Decision, Hardware And Reliability Layers
 
