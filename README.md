@@ -71,7 +71,8 @@ This makes Qruba useful as a practical bridge between business or scientific pro
 - Decision and ranking workflows over prepared values.
 - QIntent execution inside visual flows.
 - Combinatorial search across candidate spaces.
-- Controlled mathematical and semantic operations.
+- Controlled mathematical and semantic operations, including bounded
+  conditional selection through `select_if(predicate, value_if_true, value_if_false)`.
 - Semantic AI exploration for selection, routing, sampling and model-building decisions.
 - Sensing evidence experiments over sensor or simulated sensor readings.
 - Experimental Crypto QDSV workflows.
@@ -85,7 +86,7 @@ This makes Qruba useful as a practical bridge between business or scientific pro
 |---|---|
 | Dataset Input | Load prepared CSV/JSON data into the workflow. |
 | Predicate / Oracle | Convert rules over prepared rows into executable predicates and oracle-ready structures. |
-| Semantic Operation | Apply controlled mathematical or semantic operations to prepared values. |
+| Semantic Operation | Apply controlled mathematical or semantic operations to prepared values, including boolean-controlled numeric branch selection. |
 | Decision Model | Build auditable selection, scoring and ranking workflows over prepared values. |
 | Combinatorial Search | Explore bounded combinations across candidate spaces. |
 | QIntent | Write declarative QDSV-native instructions for flexible problem expression. |

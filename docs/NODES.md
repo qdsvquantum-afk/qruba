@@ -27,9 +27,16 @@ Use it when:
 
 Applies controlled operations to prepared values.
 
-Examples include arithmetic, comparison, tolerance, safe division, null handling, similarity and vector similarity where supported.
+Examples include arithmetic, comparison, tolerance, safe division, null handling, similarity, vector similarity and bounded conditional selection where supported.
 
 Use it to create an intermediate value that can later feed a Decision Model, predicate or QIntent workflow.
+
+For a bounded conditional value, configure
+`select_if(predicate, value_if_true, value_if_false)`. The predicate must be a
+prepared boolean column or literal; both branches must be bounded numeric
+values or expressions. Qruba passes the canonical operation to QDSV Operation
+Compiler v2, which derives the reversible controlled selection rather than
+evaluating a separate visual fallback.
 
 ## Decision Model
 
