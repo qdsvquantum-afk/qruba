@@ -73,6 +73,9 @@ This makes Qruba useful as a practical bridge between business or scientific pro
 - Combinatorial search across candidate spaces.
 - Controlled mathematical and semantic operations, including bounded
   conditional selection through `select_if(predicate, value_if_true, value_if_false)`.
+- Semantic Composition Engine (SCE) candidate governance for generated
+  operations: catalog, digests, semantic cross-check, evidence review and IBM
+  QPU evidence attachment before stable promotion.
 - Semantic AI exploration for selection, routing, sampling and model-building decisions.
 - Sensing evidence experiments over sensor or simulated sensor readings.
 - Experimental Crypto QDSV workflows.
@@ -90,6 +93,8 @@ This makes Qruba useful as a practical bridge between business or scientific pro
 | Decision Model | Build auditable selection, scoring and ranking workflows over prepared values. |
 | Combinatorial Search | Explore bounded combinations across candidate spaces. |
 | QIntent | Write declarative QDSV-native instructions for flexible problem expression. |
+| SCE / Candidate | Generate governed operation candidates from certified QDSV primitives and inspect evidence before publication. |
+| SCE Catalog | Review candidate state, digests, semantic cross-check, IBM QPU evidence and promotion gates. |
 | QDSV Console | Run commands, compile QIntent, inspect jobs, export results and review evidence. |
 | Output | Review and export enriched results. |
 | Traces / Verification | Inspect execution route, backend, evidence and reliability reports. |
@@ -122,6 +127,19 @@ Typical enriched outputs can include:
 - trace and evidence summaries.
 
 This separation helps users avoid confusing semantic accuracy with hardware-confirmed reliability.
+
+## SCE Governance
+
+Qruba includes the governed UI surface for QDSV's Semantic Composition Engine.
+SCE can generate candidate operations from certified primitives, but Qruba keeps
+publication controlled: generated operations receive contracts, digests,
+semantic cross-check evidence and pipeline evidence before becoming
+`OFFICIAL_CANDIDATE`.
+
+Promotion to `OFFICIAL` is not automatic. When a candidate is marked as
+`qpu_required`, Qruba requires attached IBM QPU evidence before an admin can
+promote it. This keeps automatic operation generation separate from stable
+Bridge/public operation publication.
 
 ## Case Study Evidence
 
