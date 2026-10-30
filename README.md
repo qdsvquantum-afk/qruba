@@ -99,6 +99,28 @@ This makes Qruba useful as a practical bridge between business or scientific pro
 | Output | Review and export enriched results. |
 | Traces / Verification | Inspect execution route, backend, evidence and reliability reports. |
 
+### Decision Model (ScoreModel) inputs
+
+Dataset Input loads CSV or JSON rows; it does not perform ETL. The Decision
+Model reads the numeric columns selected as criteria, combines their prepared
+values using its configured importance, priority and penalty, and compares the
+result with the decision threshold. It does not automatically convert raw
+business variables into normalized scores, risk indicators or other
+domain-specific ratings.
+
+Original numeric columns can be used directly when their values, direction and
+relative scales already express the intended decision. Otherwise, prepare the
+values before loading the dataset or create them explicitly with preceding
+Semantic Operation nodes where the required operations are supported.
+Categorical fields need an explicit representation before they can be used as
+numeric ScoreModel criteria. Keep validation labels separate from the criteria.
+
+The `scale` setting declares the numeric representation used by the dataset
+schema and ScoreModel contract. It does not normalize, multiply or reverse
+input columns. Choose a threshold in the range of scores that the configured
+criteria can actually produce; an unreachable threshold yields no selected
+candidates even when the workflow executes correctly.
+
 ## Experimental Nodes
 
 | Node | Purpose |
