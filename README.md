@@ -163,6 +163,12 @@ publication controlled: generated operations receive contracts, digests,
 semantic cross-check evidence and pipeline evidence before becoming
 `OFFICIAL_CANDIDATE`.
 
+SCE is an experimental capability separate from the stable QDSV Bridge product.
+Its candidate surface uses `qdsv_bridge_composition_experimental.v1`; an
+`EXPERIMENTAL` candidate is visible for validation and governance only, is not
+an automatically published Bridge operation, and cannot be promoted without
+the required review and evidence gates.
+
 Promotion to `OFFICIAL` is not automatic. When a candidate is marked as
 `qpu_required`, Qruba requires attached IBM QPU evidence before an admin can
 promote it. This keeps automatic operation generation separate from stable
