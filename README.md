@@ -1,14 +1,17 @@
 # Qruba
 
-[![Status](https://img.shields.io/badge/status-developer%20preview-0ea5e9.svg)](#public-project-scope)
+[![Status](https://img.shields.io/badge/status-public%20product-148f77.svg)](#public-project-scope)
 [![Powered by](https://img.shields.io/badge/powered%20by-QDSV-14b8a6.svg)](https://qdsv.cloud/)
 [![Platform](https://img.shields.io/badge/platform-cloud%20%7C%20private%20docker-111827.svg)](#access)
 
 Documentation site: https://qdsvquantum-afk.github.io/qruba/
 
+Hardware profile reference:
+[docs/QINTENT_HARDWARE_OPTIMIZATION_PROFILES.md](docs/QINTENT_HARDWARE_OPTIMIZATION_PROFILES.md)
+
 **Qruba** is the visual semantic computation platform powered by **QDSV - Quantum Declarative Semantic Value**.
 
-Qruba does not implement a parallel circuit or formula compiler. Workflow nodes produce QIntent or canonical ProblemSpec inputs and delegate compilation to **QDSV Operation Compiler v2**, the same authority used by QDSV Runtime Alpha and QDSV Bridge. Execution evidence records the operation-program digest so visual workflows can be audited against exported artifacts.
+Qruba does not implement a parallel circuit or formula compiler. Workflow nodes produce QIntent or canonical ProblemSpec inputs and delegate compilation to **QDSV Operation Compiler v2**, the same authority used by **QDSV Runtime** and **QDSV Bridge**. Execution evidence records the operation-program digest so visual workflows can be audited against exported artifacts.
 
 It helps teams explore quantum-ready computation from prepared data, problem intention, predicates, rankings, reliability policies and evidence without forcing users to start by designing quantum circuits.
 
@@ -76,6 +79,8 @@ This makes Qruba useful as a practical bridge between business or scientific pro
 - Semantic Composition Engine (SCE) candidate governance for generated
   operations: catalog, digests, semantic cross-check, evidence review and IBM
   QPU evidence attachment before stable promotion.
+- QIntent hardware optimization profiles: baseline for the direct end-user
+  path, balanced and advanced for explicit physical optimization campaigns.
 - Semantic AI exploration for selection, routing, sampling and model-building decisions.
 - Sensing evidence experiments over sensor or simulated sensor readings.
 - Experimental Crypto QDSV workflows.
