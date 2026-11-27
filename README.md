@@ -17,7 +17,9 @@ It helps teams explore quantum-ready computation from prepared data, problem int
 
 Qruba is designed for practical exploration by business analysts, data teams, researchers, software engineers, innovation groups and technical decision makers.
 
-![Qruba dashboard](./assets/dashboard.png)
+The live visual interface is available at [qruba.site](https://qruba.site/) and
+[cloud.qruba.site](https://cloud.qruba.site/). Screenshots and project
+documents are maintained outside the runtime source repository.
 
 ## 5 Minute Product View
 
